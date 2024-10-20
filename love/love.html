@@ -188,7 +188,7 @@ setInterval(createFallingBouquet, 500); // Tạo bó hoa mỗi 0.5 giây
       };
 
       const inputField = document.getElementById("inputField");
-      const textToType = "Gửi mẹ iu "; // thay đổi tên người yêu của bạn
+      const textToType = "Gửi Dì , Mự , Bà và em gái"; // thay đổi tên người yêu của bạn
       const typingSpeed = 100; // milliseconds per character
 
       let charIndex = 0;
@@ -214,14 +214,14 @@ setInterval(createFallingBouquet, 500); // Tạo bó hoa mỗi 0.5 giây
               "translateX(25px)";
           }, 2500);
           setTimeout(() => {
-            document.querySelector(".button").style.width = "calc(100% - 25px)";
+            document.querySelector(".button").style.width = "calc(100% + 150px)";
             document.querySelector(".button").style.height = "10px";
           }, 3000);
           setTimeout(() => {
             document.querySelector(".button").style.height = "30px";
           }, 3500);
           setTimeout(() => {
-            document.querySelector(".button").innerHTML = "Nhận thư";
+            document.querySelector(".button").innerHTML = "Nhận thư và ấn vào thư khi rơi xuống";
           }, 4000);
         }
       }
@@ -234,7 +234,7 @@ setInterval(createFallingBouquet, 500); // Tạo bó hoa mỗi 0.5 giây
     // .textLetter text h2
     let indexText = 0;
     let textLetter = document.querySelector(".textLetter h2");
-    const textLetterH2 = "Gửi mẹ iu quà 20/10";
+    const textLetterH2 = "Gửi quà 20/10";
     let timoutTextLetter;
 
     function textCharLetter() {
@@ -263,7 +263,7 @@ setInterval(createFallingBouquet, 500); // Tạo bó hoa mỗi 0.5 giây
     let textLetterContent = document.querySelector(".contentLetter");
     // thay đổi lời chúc
     const textLetterP =
-      "Hôm nay ngày 20/10 , con chúc mẹ iu 1 ngày 20/10 thật là hạnh phúc , luôn xinh đẹp và luôn thật nhiều sức khoẻ . HAPPY WOMAN DAY MẸ IU 💗💗💗";
+      "Hôm nay ngày 20/10 , con chúc Dì , Mự , Bà và em gái 1 ngày 20/10 thật là hạnh phúc , luôn xinh đẹp và luôn thật nhiều sức khoẻ và mong em gái có thể nhận được món quà này. HAPPY WOMAN DAY 💗💗💗";
     let timoutTextLetterContent;
     let letterContent = ""; // Để lưu nội dung trước khi hiển thị
     function textCharLetterContent() {
