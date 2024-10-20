@@ -800,7 +800,35 @@ body{
       transform: translateY(110vh) rotate(360deg); /* Di chuyển xuống dưới + xoay */
     }
   }
+  .falling-flower {
+    position: absolute;
+    top: -50px; /* Bắt đầu từ phía trên màn hình */
+    font-size: 24px; /* Kích thước hoa */
+    opacity: 0.8;
+    animation-name: fall;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
 
+@keyframes fall {
+    to {
+        transform: translateY(100vh); /* Rơi xuống dưới cùng màn hình */
+        opacity: 0; /* Mờ dần khi rơi */
+    }
+}
+
+/* Thêm responsive cho các thiết bị */
+@media (max-width: 768px) {
+    .falling-flower {
+        font-size: 18px; /* Giảm kích thước hoa trên thiết bị nhỏ hơn */
+    }
+}
+
+@media (max-width: 480px) {
+    .falling-flower {
+        font-size: 16px; /* Giảm kích thước hoa trên thiết bị di động */
+    }
+}
   .falling-bouquet {
     position: fixed;
     top: -50px;
